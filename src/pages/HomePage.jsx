@@ -8,22 +8,10 @@ const stats = [
 ];
 
 const programs = [
-  {
-    title: 'Early Years',
-    description: 'A nurturing environment that builds curiosity, confidence, and foundational skills for young learners (Ages 2-5).',
-  },
-  {
-    title: 'Primary School',
-    description: 'Engaging, child-centered instruction that encourages literacy, numeracy, creativity, and strong values (Grades 1-6).',
-  },
-  {
-    title: 'Middle School',
-    description: 'Academic rigor with mentorship that prepares learners for leadership, STEM, and critical thinking (Grades 7-9).',
-  },
-  {
-    title: 'Senior School',
-    description: 'Focused preparation for national exams, tertiary education, and future-ready careers (Grades 10-12).',
-  },
+  { title: 'Early Years', description: 'Nurturing environment for ages 2-5.' },
+  { title: 'Primary School', description: 'Strong foundations for grades 1-6.' },
+  { title: 'Middle School', description: 'Academic rigor for grades 7-9.' },
+  { title: 'Senior School', description: 'Career prep for grades 10-12.' },
 ];
 
 const admissionsSteps = [
@@ -34,9 +22,9 @@ const admissionsSteps = [
 ];
 
 const testimonials = [
-  '"The teachers truly care about every child and help them grow in confidence and character." — Parent, Grade 4',
-  '"Concordia has created a strong balance between academic excellence and personal development." — Parent, Grade 9',
-  '"Our son feels supported, challenged, and inspired every day at Concordia." — Parent, Grade 6',
+  '"The teachers truly care about every child." — Parent, Grade 4',
+  '"Perfect balance of academics and development." — Parent, Grade 9',
+  '"Our son feels inspired every day." — Parent, Grade 6',
 ];
 
 function HomePage({ setCurrentPage }) {
@@ -48,8 +36,7 @@ function HomePage({ setCurrentPage }) {
             <p className="eyebrow">Nurturing Bright Minds</p>
             <h1>Excellence in learning, leadership, and character.</h1>
             <p className="lead">
-              Concordia Preparatory School inspires students to discover their potential through quality education,
-              caring mentorship, and a vibrant school community.
+              Concordia Preparatory School inspires students to discover their potential through quality education, caring mentorship, and a vibrant school community.
             </p>
             <div className="cta-row">
               <button onClick={() => setCurrentPage('home')} className="button primary">
@@ -60,13 +47,12 @@ function HomePage({ setCurrentPage }) {
               </button>
             </div>
           </div>
-
           <div className="hero-card">
             <p className="card-label">School Highlights</p>
             <ul>
               <li>Small class sizes for personalized learning</li>
-              <li>Strong academics with a values-based approach</li>
-              <li>Sports, arts, clubs, and leadership opportunities</li>
+              <li>Strong academics with values-based approach</li>
+              <li>Sports, arts, clubs, and leadership</li>
               <li>Experienced and passionate faculty</li>
             </ul>
           </div>
@@ -90,7 +76,6 @@ function HomePage({ setCurrentPage }) {
             <p className="eyebrow dark">Academics</p>
             <h2>Programs designed for growth and achievement.</h2>
           </div>
-
           <div className="card-grid">
             {programs.map((program) => (
               <article className="info-card" key={program.title}>
@@ -110,11 +95,8 @@ function HomePage({ setCurrentPage }) {
           <div>
             <p className="eyebrow dark">Admissions</p>
             <h2>Simple steps to join the Concordia family.</h2>
-            <p>
-              We welcome families who value academic excellence, character formation, and a caring school environment.
-            </p>
+            <p>We welcome families who value academic excellence and character formation.</p>
           </div>
-
           <div className="steps">
             {admissionsSteps.map((step, index) => (
               <div className="step" key={step}>
@@ -132,12 +114,9 @@ function HomePage({ setCurrentPage }) {
             <p className="eyebrow dark">Testimonials</p>
             <h2>Families trust Concordia to inspire growth.</h2>
           </div>
-
           <div className="testimonial-grid">
             {testimonials.map((quote) => (
-              <blockquote key={quote} className="quote-card">
-                {quote}
-              </blockquote>
+              <blockquote key={quote} className="quote-card">{quote}</blockquote>
             ))}
           </div>
         </div>
@@ -155,11 +134,10 @@ function HomePage({ setCurrentPage }) {
               <li>🕐 Mon-Fri: 7:30 AM - 4:00 PM</li>
             </ul>
           </div>
-
           <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
-            <input type="text" placeholder="Full name" aria-label="Full name" required />
-            <input type="email" placeholder="Email address" aria-label="Email address" required />
-            <textarea placeholder="Your message" aria-label="Your message" rows="5" />
+            <input type="text" placeholder="Full name" required />
+            <input type="email" placeholder="Email address" required />
+            <textarea placeholder="Your message" rows="5" />
             <button type="submit" className="button primary">Send Message</button>
           </form>
         </div>

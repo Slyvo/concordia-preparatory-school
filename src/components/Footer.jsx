@@ -9,14 +9,14 @@ function Footer() {
           <p>Empowering learners for a brighter future</p>
         </div>
         <div className="footer-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Contact</a>
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Service</a>
+          <a href="#contact">Contact</a>
         </div>
         <div className="social-links">
-          <a href="#" aria-label="Facebook">f</a>
-          <a href="#" aria-label="Twitter">𝕏</a>
-          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#facebook" aria-label="Facebook">f</a>
+          <a href="#twitter" aria-label="Twitter">𝕏</a>
+          <a href="#instagram" aria-label="Instagram">📷</a>
         </div>
       </div>
       <div className="footer-bottom">

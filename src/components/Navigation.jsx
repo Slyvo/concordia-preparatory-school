@@ -12,7 +12,7 @@ function Navigation({ currentPage, setCurrentPage }) {
   return (
     <header className="topbar">
       <div className="container nav">
-        <div className="brand">
+        <div className="brand" onClick={() => setCurrentPage('home')}>
           <div className="brand-mark">C</div>
           <div>
             <strong>Concordia</strong>
